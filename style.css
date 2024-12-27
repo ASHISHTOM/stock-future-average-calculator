@@ -21,6 +21,14 @@ body {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Header Image */
+.header-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 /* Input Fields */
 .input-group input {
   width: 100%;
