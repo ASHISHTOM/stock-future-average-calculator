@@ -4,41 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Future Average Calculator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      font-size: 16px;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    .result {
-      margin-top: 20px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Future Average Calculator</h1>
-    <input type="number" id="currentQuantities" placeholder="Current Quantities" />
-    <input type="number" id="currentAverage" placeholder="Current Average" step="0.01" />
-    <input type="number" id="futureQuantities" placeholder="Future Quantities" />
-    <input type="number" id="newBuyPrice" placeholder="New Buy Price" step="0.01" />
+    <div class="input-group">
+      <input type="number" id="currentQuantities" placeholder="Current Quantities" />
+      <input type="number" id="currentAverage" placeholder="Current Average" step="0.01" />
+      <input type="number" id="futureQuantities" placeholder="Future Quantities" />
+      <input type="number" id="newBuyPrice" placeholder="New Buy Price" step="0.01" />
+    </div>
     <button onclick="calculateAverage()">Calculate</button>
     <div class="result" id="result"></div>
   </div>
