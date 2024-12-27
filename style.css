@@ -9,6 +9,7 @@ body {
   height: 100vh;
   background: url('background.jpeg') no-repeat center center/cover;
   color: #fff;
+  overflow: hidden; /* Prevent extra scrolling */
 }
 
 /* Container */
@@ -16,17 +17,22 @@ body {
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 15px;
+  width: 90%;
   max-width: 400px;
   text-align: center;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  height: auto;
+  max-height: 90vh; /* Ensures the container fits within the viewport */
+  overflow-y: auto; /* Adds internal scrolling if content overflows */
 }
 
 /* Header Image */
 .header-image {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto; /* Centered image with appropriate spacing */
+  display: block;
 }
 
 /* Input Fields */
@@ -37,6 +43,7 @@ body {
   border: none;
   border-radius: 5px;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 /* Button */
